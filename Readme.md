@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Владимир Попов](https://up.htmlacademy.ru/htmlcss/29/user/1093569).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Боровик](https://htmlacademy.ru/profile/mouxez)
 
 ---
 
