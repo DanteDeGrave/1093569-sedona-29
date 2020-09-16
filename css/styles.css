@@ -1,4 +1,3 @@
-/*Fonts*/
 @font-face {
   font-family: 'PT Sans';
   font-style: normal;
@@ -18,8 +17,10 @@
   font-display: swap;
 }
 
-/*Variables*/
 :root{
+  /*colors*/
+  --brand-color-background: #fff;
+  --brand-color-font: #000;
   --basic-white: #fff;
   --opacity-white: rgba(255,255,255,0.3);
   --opacity-white-90: rgba(255,255,255,0.9);
@@ -37,45 +38,62 @@
   --basic-brown: #766357;
   --hover-brown: #604e43;
   --active-brown: #503E33;
+  /*  fonts */
+  --brand-font: "PT Sans", Arial, sans-serif;
 }
+
 body {
   min-width: 1200px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  color: var(--basic-black);
-  background-color: var(--basic-white);
+  color: var(--brand-color-font);
+  background-color: var(--brand-color-background);
 }
 .site-nav {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.main-head a {
-  text-decoration: none;
-  color: var(--basic-black);
+.main-nav {
+  font-family: var(--brand-font);
+  font-size: 14px;
+  text-transform: uppercase;
   line-height: 26px;
   font-weight: bold;
+  text-decoration: none;
 }
-.main-head a:not(.nav-active-link):hover {
+.main-nav a {
+  text-decoration: none;
+  color: var(--brand-color-font);
+}
+.main-nav a:not(.nav-active-link):hover {
   color: var(--basic-blue);
 }
-.main-head a:active {
+.main-nav a:active {
   color: var(--opacity-black);
 }
-.main-head .nav-active-link {
+.main-nav .nav-active-link {
   color: var(--basic-brown);
 }
-.hidden {
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
-.slogan {
+.container-head-slogan {
+  font-family: var(--brand-font);
+  text-transform: uppercase;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+}
+.features{
+  font-family: var(--brand-font);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
 }
 .features-list-title {
   line-height: 26px;
@@ -105,6 +123,7 @@ body {
   counter-increment: features-count;
   content: "\2013  №"counter(features-count)" \2013";
 }
+
 .search-hotels span {
   font-size: 30px;
   font-weight: bold;
@@ -114,14 +133,17 @@ body {
   line-height: 24px;
 }
 .buttons {
-  font-family: inherit;
+  font-family: var(--brand-font);
   color: var(--basic-white);
   font-weight: bold;
-  text-transform: inherit;
+  text-transform: uppercase;
+}
+.search-hotels{
+  font-family: var(--brand-font);
+  text-transform: uppercase;
 }
 .search-hotels-button {
-  width: 568px;
-  height: 86px;
+  padding: 30px 139px;
   background-color: var(--basic-brown);
   font-size: 21px;
   line-height: 26px;
@@ -139,11 +161,13 @@ body {
 }
 .main-footer {
   width: 100%;
-  height: 120px;
+  min-height: 120px;
   background-color: var(--opacity-white-90);
 }
 .contacts,
 .tel {
+  font-family: var(--brand-font);
+  text-transform: uppercase;
   text-decoration: none;
   color: var(--basic-black);
   font-size: 21px;
@@ -156,5 +180,7 @@ body {
   margin: 0;
 }
 .footer-copyright {
+  font-family: var(--brand-font);
+  text-transform: uppercase;
   line-height: 26px;
 }
