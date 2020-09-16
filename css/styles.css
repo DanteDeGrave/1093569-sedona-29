@@ -165,7 +165,7 @@ body {
   background-color: var(--opacity-white-90);
 }
 .contacts,
-.tel {
+.phone {
   font-family: var(--brand-font);
   text-transform: uppercase;
   text-decoration: none;
