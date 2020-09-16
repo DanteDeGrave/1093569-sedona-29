@@ -137,6 +137,8 @@ body {
   color: var(--basic-white);
   font-weight: bold;
   text-transform: uppercase;
+  border: none;
+  outline: none;
 }
 .search-hotels{
   font-family: var(--brand-font);
@@ -156,8 +158,88 @@ body {
   background-color: var(--active-brown);
   color: var(--opacity-white);
 }
-.search-hotels-button:focus {
+.hotels-filter {
+  font-family: var(--brand-font);
+  color: var(--brand-color-font);
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 0;
+}
+.hotels-filter-found {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.hotels-filter-button {
+  text-transform: inherit;
+  background-color: transparent;
+  border: none;
   outline: none;
+  border-bottom: 1px dashed var(--basic-blue);
+  padding: 0;
+  color: var(--opacity-black);
+}
+.hotels-filter-button:hover {
+  color: var(--basic-blue);
+}
+.hotels-filter-button:active {
+  color: var(--basic-black);
+  border: none;
+}
+.hotels-filter .hotels-filter-button-active {
+  color: var(--basic-blue);
+  border: none;
+}
+.search-result {
+  font-family: var(--brand-font);
+  color: var(--brand-color-font);
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.search-result-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.search-result-item h3 {
+  font-size: 21px;
+}
+.search-result-item a {
+  text-decoration: none;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+.search-result-item a:hover {
+  color: var(--basic-blue);
+}
+.search-result-item a:active {
+  color: var(--opacity-black);
+}
+.search-result-button-details {
+  line-height: 21px;
+  padding: 3px 16px 3px 17px;
+  background-color: var(--basic-blue);
+}
+.search-result-button-details:hover {
+  background-color: var(--hover-blue);
+}
+.search-result-button-details:active {
+  background-color: var(--active-blue);
+  color: var(--opacity-white);
+}
+.search-result-button-reservation {
+  line-height: 21px;
+  padding: 3px 16px 3px 17px;
+  background-color: var(--basic-brown);
+}
+.search-result-button-reservation:hover {
+  background-color: var(--hover-brown);
+}
+.search-result-button-reservation:active {
+  background-color: var(--active-brown);
+  color: var(--opacity-white);
 }
 .main-footer {
   width: 100%;
