@@ -3,8 +3,8 @@
   font-style: normal;
   font-weight: 400;
   src: local('PT Sans'), local('PTSans-Regular'),
-  url('../fonts/ptsans.woff2') format('woff2'),
-  url('../fonts/ptsans.woff') format('woff');
+  url('../fonts/pt-sans-v12-latin-700.woff2') format('woff2'),
+  url('../fonts/pt-sans-v12-latin-700.woff') format('woff');
   font-display: swap;
 }
 @font-face {
@@ -12,8 +12,8 @@
   font-style: normal;
   font-weight: 700;
   src: local('PT Sans Bold'), local('PTSans-Bold'),
-  url('../fonts/ptsansbold.woff2') format('woff2'),
-  url('../fonts/ptsansbold.woff') format('woff');
+  url('../fonts/pt-sans-v12-latin-regular.woff2') format('woff2'),
+  url('../fonts/pt-sans-v12-latin-regular.woff') format('woff');
   font-display: swap;
 }
 
@@ -135,7 +135,6 @@ body {
 .buttons {
   font-family: var(--brand-font);
   color: var(--basic-white);
-  font-weight: bold;
   text-transform: uppercase;
   border: none;
   outline: none;
@@ -147,9 +146,9 @@ body {
 .search-hotels-button {
   padding: 30px 139px;
   background-color: var(--basic-brown);
+  font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  border: none;
 }
 .search-hotels-button:hover {
   background-color: var(--hover-brown);
@@ -172,10 +171,7 @@ body {
   font-weight: bold;
 }
 .hotels-filter-button {
-  text-transform: inherit;
   background-color: transparent;
-  border: none;
-  outline: none;
   border-bottom: 1px dashed var(--basic-blue);
   padding: 0;
   color: var(--opacity-black);
@@ -221,6 +217,7 @@ body {
   line-height: 21px;
   padding: 3px 16px 3px 17px;
   background-color: var(--basic-blue);
+  font-weight: bold;
 }
 .search-result-button-details:hover {
   background-color: var(--hover-blue);
@@ -233,6 +230,7 @@ body {
   line-height: 21px;
   padding: 3px 16px 3px 17px;
   background-color: var(--basic-brown);
+  font-weight: bold;
 }
 .search-result-button-reservation:hover {
   background-color: var(--hover-brown);
