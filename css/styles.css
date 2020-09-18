@@ -3,8 +3,8 @@
   font-style: normal;
   font-weight: 400;
   src: local('PT Sans'), local('PTSans-Regular'),
-  url('../fonts/pt-sans-v12-latin-regular.woff2') format('woff2'),
-  url('../fonts/pt-sans-v12-latin-regular.woff') format('woff');
+  url('../fonts/pt-sans.woff2') format('woff2'),
+  url('../fonts/pt-sans.woff') format('woff');
   font-display: swap;
 }
 @font-face {
@@ -12,8 +12,8 @@
   font-style: normal;
   font-weight: 700;
   src: local('PT Sans Bold'), local('PTSans-Bold'),
-  url('../fonts/pt-sans-v12-latin-700.woff2') format('woff2'),
-  url('../fonts/pt-sans-v12-latin-700.woff') format('woff');
+  url('../fonts/pt-sans-700.woff2') format('woff2'),
+  url('../fonts/pt-sans-700.woff') format('woff');
   font-display: swap;
 }
 
@@ -39,7 +39,7 @@
   --hover-brown: #604e43;
   --active-brown: #503E33;
   /*  fonts */
-  --brand-font: "PT Sans", Arial, sans-serif;
+  --brand-font: 'PT Sans', Arial, sans-serif;
 }
 
 body {
