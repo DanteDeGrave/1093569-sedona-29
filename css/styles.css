@@ -98,7 +98,7 @@ body {
 }
 .main-head-logo {
   position: absolute;
-  padding: 0 550px;          /* просто для красоты, научусь позиционировать - передалаю*/
+  margin: 0 550px;
 }
 .main-nav {
   font-family: var(--brand-font);
