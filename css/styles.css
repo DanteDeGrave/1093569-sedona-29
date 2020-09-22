@@ -41,18 +41,64 @@
   /*  fonts */
   --brand-font: 'PT Sans', Arial, sans-serif;
 }
-
+.page {
+  height: 100%;
+}
 body {
-  min-width: 1200px;
-  margin: 0;
+  width: 1200px;
   padding: 0;
   color: var(--brand-color-font);
   background-color: var(--brand-color-background);
 }
+.main-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  margin: 0 auto;
+}
 .site-nav {
+  display: grid;
+  grid-template-areas: "info foto . map hotels";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   list-style: none;
   padding: 0;
   margin: 0;
+}
+.info-layout{
+  grid-area: info;
+  text-align: left;
+  padding-left: 72px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.foto-layout {
+  grid-area: foto;
+  text-align: left;
+  padding-left: 72px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.map-layout {
+  grid-area: map;
+  text-align: right;
+  padding-right: 72px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.hotels-layout {
+  grid-area: hotels;
+  text-align: right;
+  padding-right: 72px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.position {
+  position: relative;
+}
+.main-head-logo {
+  position: absolute;
+  padding: 0 550px;          /* просто для красоты, научусь позиционировать - передалаю*/
 }
 .main-nav {
   font-family: var(--brand-font);
@@ -88,17 +134,22 @@ body {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  text-align: center;
 }
 .features{
   font-family: var(--brand-font);
   text-transform: uppercase;
   font-size: 14px;
   line-height: 21px;
+  text-align: center;
 }
 .features-list-title {
   line-height: 26px;
 }
 .features-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 256px 256px 256px 256px;
   list-style: none;
   counter-reset: features-count;
   padding: 0;
@@ -113,6 +164,30 @@ body {
   min-height: 256px;
   background-color: var(--basic-gray);
 }
+.recommendations-item-layout {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+}
+.features-first-item-layout {
+  grid-column: 1 / 2;
+  grid-row: 1 /2;
+}
+.features-second-item-layout {
+  grid-column: 3 / 4;
+  grid-row: 3 /4;
+}
+.features-third-item-layout {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+.features-fourth-item-layout {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+.features-fifth-item-layout {
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+}
 .big-block {
   width: 100%;
   min-height: 256px;
@@ -123,7 +198,9 @@ body {
   counter-increment: features-count;
   content: "\2013  №"counter(features-count)" \2013";
 }
-
+.search-hotels {
+  text-align: center;
+}
 .search-hotels span {
   font-size: 30px;
   font-weight: bold;
@@ -240,9 +317,12 @@ body {
   color: var(--opacity-white);
 }
 .main-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   min-height: 120px;
   background-color: var(--opacity-white-90);
+  text-align: center;
 }
 .contacts,
 .phone {
