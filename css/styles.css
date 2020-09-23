@@ -168,6 +168,10 @@ body {
   grid-column: 1 / -1;
   grid-row: 2 / 3;
 }
+.recommendations-item-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .features-first-item-layout {
   grid-column: 1 / 2;
   grid-row: 1 /2;
