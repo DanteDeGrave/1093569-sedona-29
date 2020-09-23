@@ -128,13 +128,17 @@ body {
   height: 1px;
   margin: -1px;
 }
-.container-head-slogan {
+.container-head {
+  min-height: 509px;
+}
+.slogan {
   font-family: var(--brand-font);
   text-transform: uppercase;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   text-align: center;
+  margin-top: 43px;
 }
 .features{
   font-family: var(--brand-font);
@@ -145,6 +149,8 @@ body {
 }
 .features-list-title {
   line-height: 26px;
+  margin-top: 42px;
+  margin-bottom: 51px;
 }
 .features-list {
   display: grid;
