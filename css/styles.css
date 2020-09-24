@@ -153,9 +153,6 @@ body {
   margin-bottom: 51px;
 }
 .features-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 256px 330px 256px 256px;
   list-style: none;
   counter-reset: features-count;
   padding: 0;
@@ -169,38 +166,6 @@ body {
   width: 100%;
   min-height: 256px;
   background-color: var(--basic-gray);
-}
-.recommendations-item-layout {
-  grid-column: 1 / -1;
-  grid-row: 2 / 3;
-}
-.recommendations-item-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-.recommendations-item-grid dl {
-  margin: 0;
-  padding: 0;
-}
-.features-first-item-layout {
-  grid-column: 1 / 2;
-  grid-row: 1 /2;
-}
-.features-second-item-layout {
-  grid-column: 3 / 4;
-  grid-row: 3 /4;
-}
-.features-third-item-layout {
-  grid-column: 1 / 2;
-  grid-row: 4 / 5;
-}
-.features-fourth-item-layout {
-  grid-column: 2 / 3;
-  grid-row: 4 / 5;
-}
-.features-fifth-item-layout {
-  grid-column: 3 / 4;
-  grid-row: 4 / 5;
 }
 .big-block {
   width: 100%;
@@ -217,7 +182,6 @@ body {
 }
 .search-hotels span {
   display: block;
-  margin-top: 57px;
   font-size: 30px;
   font-weight: bold;
   line-height: 24px;
@@ -225,8 +189,6 @@ body {
 .search-hotels p {
   font-size: 14px;
   line-height: 24px;
-  margin-top: 31px;
-  margin-bottom: 46px;
 }
 .buttons {
   font-family: var(--brand-font);
@@ -245,7 +207,6 @@ body {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  margin-bottom: 473px;
 }
 .search-hotels-button:hover {
   background-color: var(--hover-brown);
@@ -337,8 +298,6 @@ body {
   color: var(--opacity-white);
 }
 .main-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   min-height: 120px;
   background-color: var(--opacity-white-90);
