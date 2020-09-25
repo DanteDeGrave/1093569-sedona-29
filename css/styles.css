@@ -117,14 +117,16 @@ body {
 }
 .container-head {
   min-height: 509px;
+  margin-bottom: 42px;
 }
 .slogan {
   font-family: var(--brand-font);
   text-transform: uppercase;
   font-size: 21px;
-  line-height: 26px;
+  line-height: 27px;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 42px;
 }
 .features{
   font-family: var(--brand-font);
@@ -135,27 +137,51 @@ body {
 }
 .features-list-title {
   line-height: 26px;
+  color: var(--basic-dark-gray);
+  margin-bottom: 51px;
 }
 .features-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   list-style: none;
   counter-reset: features-count;
   padding: 0;
-  margin: 0;
+  margin: 0 0 58px;
+}
+.features-list li {
+  flex-grow: 1;
+}
+.features-list dl {
+  margin:0;
+  max-width: 400px;
+  min-height: 256px;
 }
 .features-list dt {
   font-size: 21px;
   font-weight: bold;
 }
 .features-item {
-  width: 100%;
   min-height: 256px;
   background-color: var(--basic-gray);
 }
 .big-block {
   width: 100%;
   min-height: 256px;
+}
+.point-1,
+.point-2 {
   background-color: var(--basic-blue);
   color: var(--basic-white);
+}
+.recommendations-item {
+  display: flex;
+  width: 100%;
+  min-height: 330px;
+}
+.recommendations-item dl {
+  flex-grow: 1;
+  max-width: 400px;
 }
 .features-item dd:before {
   counter-increment: features-count;
@@ -169,10 +195,12 @@ body {
   font-size: 30px;
   font-weight: bold;
   line-height: 24px;
+  margin-bottom: 31px;
 }
 .search-hotels p {
   font-size: 14px;
   line-height: 24px;
+  margin-bottom: 42px;
 }
 .buttons {
   font-family: var(--brand-font);
@@ -191,6 +219,7 @@ body {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  margin-bottom: 473px;
 }
 .search-hotels-button:hover {
   background-color: var(--hover-brown);
