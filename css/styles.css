@@ -58,16 +58,34 @@ body {
   margin: 0 auto;
 }
 .site-nav {
+  display: flex;
+  height: 56px;
+  align-items: center;
   list-style: none;
   padding: 0;
   margin: 0;
+}
+.site-nav-info {
+  margin-left: 72px;
+}
+.site-nav-photo {
+  margin-left: 134px;
+  margin-right: auto;
+}
+.site-nav-map {
+  margin-right: 147px;
+  margin-left: auto;
+}
+.site-nav-hotels {
+  margin-right: 72px;
 }
 .position {
   position: relative;
 }
 .main-head-logo {
   position: absolute;
-  margin: 0 550px;
+  margin-top: 0;
+  margin-left: 531px;
 }
 .main-nav {
   font-family: var(--brand-font);
@@ -107,7 +125,6 @@ body {
   line-height: 26px;
   font-weight: bold;
   text-align: center;
-  margin-top: 43px;
 }
 .features{
   font-family: var(--brand-font);
@@ -118,8 +135,6 @@ body {
 }
 .features-list-title {
   line-height: 26px;
-  margin-top: 42px;
-  margin-bottom: 51px;
 }
 .features-list {
   list-style: none;
