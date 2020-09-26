@@ -311,10 +311,15 @@ body {
   color: var(--opacity-white);
 }
 .main-footer {
+  display: flex;
+  justify-content: space-around;
   width: 100%;
   min-height: 120px;
   background-color: var(--opacity-white-90);
   text-align: center;
+
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
 }
 .contacts span {
   display: block;
@@ -338,4 +343,6 @@ body {
   font-family: var(--brand-font);
   text-transform: uppercase;
   line-height: 26px;
+  padding: 0;
+  margin: 0;
 }
