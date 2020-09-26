@@ -109,11 +109,13 @@ body {
   color: var(--basic-brown);
 }
 .visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+  position: absolute ;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 ;
+  border:0 ;
+  height: 1px ;
+  width: 1px ;
+  overflow: hidden;
 }
 .container-head {
   min-height: 509px;
@@ -147,7 +149,7 @@ body {
   list-style: none;
   counter-reset: features-count;
   padding: 0;
-  margin: 0 0 58px;
+  margin: 0 0 56px;
 }
 .features-list li {
   flex-grow: 1;
@@ -174,6 +176,9 @@ body {
   background-color: var(--basic-blue);
   color: var(--basic-white);
 }
+.point-2 dl {
+  margin-left: 800px;
+}
 .recommendations-item {
   display: flex;
   width: 100%;
@@ -194,13 +199,13 @@ body {
   display: block;
   font-size: 30px;
   font-weight: bold;
-  line-height: 24px;
+  line-height: 26px;
   margin-bottom: 31px;
 }
 .search-hotels p {
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 42px;
+  margin-bottom: 44px;
 }
 .buttons {
   font-family: var(--brand-font);
@@ -312,20 +317,13 @@ body {
 }
 .main-footer {
   display: flex;
-  justify-content: space-around;
   width: 100%;
   min-height: 120px;
   background-color: var(--opacity-white-90);
   text-align: center;
-
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
 }
-.contacts span {
-  display: block;
-}
-.contacts,
-.phone {
+.contacts {
+  flex-grow: 1;
   font-family: var(--brand-font);
   text-transform: uppercase;
   text-decoration: none;
@@ -334,14 +332,32 @@ body {
   line-height: 26px;
   font-weight: bold;
 }
+.contacts span {
+  display: block;
+}
+.phone {
+  display: block;
+  font-family: var(--brand-font);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.social {
+  flex-grow: 1;
+}
 .social ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 .footer-copyright {
+  flex-grow: 1;
   font-family: var(--brand-font);
   text-transform: uppercase;
+  font-size: 14px;
   line-height: 26px;
   padding: 0;
   margin: 0;
