@@ -25,73 +25,72 @@
     <h1 class="visually-hidden">Гостиницы</h1> <!--Скрытый-->
     <h2 class="visually-hidden">Фильтр по гостиницам</h2> <!--Скрытый-->
     <div class="hotels-filter-menu"></div>        <!--Тут будет фильтр с тегом FORM-->
-    <div class="hotels-filter-sort"></div>
+    <div class="hotels-filter-sort">
       <span class="hotels-filter-found">Найдено: 3</span>
       <span class="hotels-filter-label">Сортировка:</span>
-      <button class="buttons hotels-filter-button hotels-filter-button-active" type="button">По цене</button>
-      <button class="buttons hotels-filter-button" type="button">По типу</button>
-      <button class="buttons hotels-filter-button" type="button">По рейтингу</button>
-      <button class="buttons hotels-filter-pointer" type="button">up</button>
-      <button class="buttons hotels-filter-pointer" type="button">down</button>
+      <button class="buttons hotels-filter-button hotels-filter-button-active button-price" type="button">По цене</button>
+      <button class="buttons hotels-filter-button button-type" type="button">По типу</button>
+      <button class="buttons hotels-filter-button button-rating" type="button">По рейтингу</button>
+      <button class="buttons hotels-filter-pointer up-arrow" type="button">up</button>
+      <button class="buttons hotels-filter-pointer down-arrow" type="button">down</button>
     </div>
   </section>
   <section class="search-result">
     <h2 class="visually-hidden">Найденные гостиницы</h2> <!--Скрытый-->
     <ul class="search-result-list">
       <li class="search-result-item">
-        <a class="search-result-item-name" href="">
-          <h3>Amara Resort & spa </h3>
-          <img src="img/amara_resort.jpg" width="137" height="92" alt="Amara Resort & SPA">
-        </a>
-        <p>
-          Гостиница
+        <a class="search-result-item-photo" href=""><img src="img/amara_resort.jpg" width="135" height="90" alt="Amara Resort & SPA"></a>
+        <div class="search-result-item-block-1">
+          <a class="search-result-item-name" href=""><h3>Amara Resort & spa </h3></a>
+          <span class="search-result-item-type">Гостиница</span>
+          <span class="search-result-item-price">от 4000 р.</span>
           <button class="buttons search-result-button-details" type="button">подробнее</button>
-        </p>
-        <p>
-          от 4000 р.
           <button class="buttons search-result-button-reservation" type="button">забронировать</button>
-        </p>
-        <p>рейтинг: 8,5</p>
-        <img src="https://via.placeholder.com/19x17" alt="star" width="19" height="17">
-        <img src="https://via.placeholder.com/19x17" alt="star" width="19" height="17">
-        <img src="https://via.placeholder.com/19x17" alt="star" width="19" height="17">
-        <img src="https://via.placeholder.com/19x17" alt="star" width="19" height="17">
-      </li>
-
-      <li class="search-result-item">
-        <a class="search-result-item-name" href="">
-          <h3>Desert Quail Inn</h3>
-          <img src="img/desert_quail.jpg" width="135" height="90" alt="Desert Quail Inn">
-        </a>
-        <p>
-          Мотель
-          <button class="buttons search-result-button-details" type="button">подробнее</button>
-        </p>
-        <p>
-          от 3000 р.
-          <button class="buttons search-result-button-reservation" type="button">забронировать</button>
-        </p>
-        <p>рейтинг: 8,9</p>
-        <img src="https://via.placeholder.com/19x17" alt="star" width="19" height="17">
-        <img src="https://via.placeholder.com/19x17" alt="star" width="19" height="17">
-        <img src="https://via.placeholder.com/19x17" alt="star" width="19" height="17">
+        </div>
+        <div class="search-result-item-block-2">
+          <div class="search-result-item-stars">
+            <img src="https://via.placeholder.com/19x17" alt="star" width="19" height="17">
+            <img src="https://via.placeholder.com/19x17" alt="star" width="19" height="17">
+            <img src="https://via.placeholder.com/19x17" alt="star" width="19" height="17">
+            <img src="https://via.placeholder.com/19x17" alt="star" width="19" height="17">
+          </div>
+          <span class="search-result-item-rating">рейтинг: 8,5</span>
+        </div>
       </li>
       <li class="search-result-item">
-        <a class="search-result-item-name" href="">
-          <h3>Villas at Poco Diablo</h3>
-          <img src="img/vilas_at_poco_diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
-        </a>
-        <p>
-          Апартаменты
+        <a class="search-result-item-photo" href=""><img src="img/desert_quail.jpg" width="135" height="90" alt="Desert Quail Inn"></a>
+        <div class="search-result-item-block-1">
+          <a class="search-result-item-name" href=""><h3>Desert Quail Inn</h3></a>
+          <span class="search-result-item-type">Мотель</span>
+          <span class="search-result-item-price">от 3000 р.</span>
           <button class="buttons search-result-button-details" type="button">подробнее</button>
-        </p>
-        <p>
-          от 2000 р.
           <button class="buttons search-result-button-reservation" type="button">забронировать</button>
-        </p>
-        <p>рейтинг: 9,2</p>
-        <img src="https://via.placeholder.com/19x17" alt="star" width="19" height="17">
-        <img src="https://via.placeholder.com/19x17" alt="star" width="19" height="17">
+        </div>
+        <div class="search-result-item-block-2">
+          <div class="search-result-item-stars">
+            <img src="https://via.placeholder.com/19x17" alt="star" width="19" height="17">
+            <img src="https://via.placeholder.com/19x17" alt="star" width="19" height="17">
+            <img src="https://via.placeholder.com/19x17" alt="star" width="19" height="17">
+          </div>
+          <span class="search-result-item-rating">рейтинг: 8,9</span>
+        </div>
+      </li>
+      <li class="search-result-item">
+        <a class="search-result-item-photo" href=""><img src="img/vilas_at_poco_diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo"></a>
+        <div class="search-result-item-block-1">
+          <a class="search-result-item-name" href=""><h3>Villas at Poco Diablo</h3></a>
+          <span class="search-result-item-type">Апартаменты</span>
+          <span class="search-result-item-price">от 2000 р.</span>
+          <button class="buttons search-result-button-details" type="button">подробнее</button>
+          <button class="buttons search-result-button-reservation" type="button">забронировать</button>
+        </div>
+        <div class="search-result-item-block-2">
+          <div class="search-result-item-stars">
+            <img src="https://via.placeholder.com/19x17" alt="star" width="19" height="17">
+            <img src="https://via.placeholder.com/19x17" alt="star" width="19" height="17">
+          </div>
+          <span class="search-result-item-rating">рейтинг: 9,2</span>
+        </div>
       </li>
     </ul>
   </section>
