@@ -96,17 +96,17 @@ body {
   font-weight: bold;
   text-decoration: none;
 }
-.main-nav a {
+.site-nav a {
   text-decoration: none;
   color: var(--brand-color-font);
 }
-.main-nav a:not(.nav-active-link):hover {
+.site-nav a:not(.nav-active-link):hover {
   color: var(--basic-blue);
 }
-.main-nav a:active {
+.site-nav a:not(.nav-active-link):active {
   color: var(--opacity-black);
 }
-.main-nav .nav-active-link {
+.site-nav .nav-active-link {
   color: var(--basic-brown);
 }
 .visually-hidden {
@@ -216,6 +216,7 @@ body {
   text-transform: uppercase;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 .search-hotels{
   font-family: var(--brand-font);
