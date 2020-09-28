@@ -325,37 +325,38 @@ body {
   line-height: 0;
 }
 .search-result-item-block-1 {
-  display: flex;
-  max-width: 350px;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  grid-template-rows: 47px 31px 42px;
+  column-gap: 6px;
   margin-left: 29px;
   margin-right: auto;
   min-height: 150px;
-
 }
 .search-result-item-type {
-  min-width: 110px;
-  height: 27px;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  align-self: end;
 }
 .search-result-item-price {
-  min-width: 142px;
-  height: 27px;
-  margin-left: 6px;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  align-self: end;
 }
 .search-result-button-details {
-  min-width: 110px;
-  height: 27px;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  align-self: end;
 }
 .search-result-button-reservation {
-  height: 27px;
-  min-width: 142px;
-  margin-left: 6px;
-  margin-bottom: 20px;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  align-self: end;
 }
 .search-result-item-name {
-  margin-top: 25px;
-  min-width: 300px;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  align-self: end;
   text-decoration: none;
   color: var(--basic-black);
 }
