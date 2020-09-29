@@ -19,6 +19,7 @@
 
 :root{
   /*colors*/
+  --shadow-color: rgba(0, 1, 1, 0.2);;
   --brand-color-background: #fff;
   --brand-color-font: #000;
   --basic-white: #fff;
@@ -59,7 +60,7 @@
   min-height: 100%;
   color: var(--brand-color-font);
   background-color: var(--brand-color-background);
-  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+  box-shadow: 0 5px 15px 0 var(--shadow-color);
 }
 .site-nav {
   display: flex;
