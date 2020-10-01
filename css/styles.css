@@ -329,7 +329,7 @@
 .search-result-item-block-1 {
   display: grid;
   grid-template-columns: min-content min-content min-content;
-  grid-template-rows: 47px 31px 42px;
+  grid-template-rows: min-content 30px 57px;
   column-gap: 6px;
   margin-left: 29px;
   margin-right: auto;
@@ -348,12 +348,12 @@
 .search-result-button-details {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
-  align-self: end;
+  align-self: center;
 }
 .search-result-button-reservation {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
-  align-self: end;
+  align-self: center;
 }
 .search-result-item-name {
   grid-column: 1 / -1;
@@ -362,6 +362,8 @@
   justify-self: start;
   text-decoration: none;
   color: var(--basic-black);
+  width: 500px;
+  padding-top: 27px;
 }
 .search-result-item-name:hover {
   color: var(--basic-blue);
