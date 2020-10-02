@@ -40,6 +40,7 @@
   --hover-brown: #604e43;
   --active-brown: #503E33;
   --border-color: #e5e5e5;
+  --active-light-gray: #bdbbbc;
   /*  fonts */
   --brand-font: 'PT Sans', Arial, sans-serif;
 }
@@ -573,6 +574,12 @@
   background-color: var(--basic-blue);
   color: var(--basic-white);
 }
+.social-button:hover {
+  background-color: var(--hover-blue);
+}
+.social-button:active {
+  background-color: var(--active-blue);
+}
 .footer-copyright {
   position: relative;
   font-family: var(--brand-font);
@@ -582,8 +589,14 @@
   margin-left: auto;
   margin-right: 261px;
 }
-.footer-copyright a {
+.htmlAcademy-logo {
   position: absolute;
   left: 82px;
   bottom: -13px;
+}
+.htmlAcademy-logo:hover path {
+  fill: var(--basic-blue);
+}
+.htmlAcademy-logo:active path {
+  fill: var(--active-light-gray);
 }
