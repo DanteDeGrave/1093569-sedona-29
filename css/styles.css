@@ -422,8 +422,6 @@
   background-repeat: no-repeat;
   left: -40px;
 }
-
-
 .range-filter {
   width: 320px;
 }
@@ -521,8 +519,6 @@
   background-color: var(--basic-white);
   color: var(--basic-black);
 }
-
-
 .hotels-filter-sort {
   display: flex;
   align-items: center;
@@ -552,11 +548,11 @@
   margin-right: auto;
   margin-bottom: 6px;
 }
-.up-arrow {
-  margin-right: 12px;
+.hotels-filter-pointer {
+  background: none;
 }
 .down-arrow {
-  margin-right: 73px;
+  margin-right: 67px;
 }
 .hotels-filter-button {
   background-color: transparent;
