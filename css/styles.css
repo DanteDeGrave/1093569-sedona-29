@@ -87,8 +87,8 @@
 }
 .main-head-logo {
   position: absolute;
-  margin-top: 0;
-  margin-left: 531px;
+  top: 0;
+  left: 531px;
   z-index: 1;
 }
 .main-nav {
@@ -458,7 +458,7 @@
   justify-self: start;
   text-decoration: none;
   color: var(--basic-black);
-  width: 500px;
+  max-width: 500px;
   padding-top: 27px;
 }
 .search-result-item-name:hover {
