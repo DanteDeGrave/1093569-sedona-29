@@ -451,7 +451,7 @@
   height: 4px;
   padding: 0;
   border: 8px solid var(--basic-white);
-  background-color: #ababab;
+  background-color: var(--range-shadow);
   border-radius: 50%;
   box-shadow: 0 2px 0 0 var(--range-shadow);
   cursor: pointer;
