@@ -580,6 +580,9 @@
 .social-button:active {
   background-color: var(--active-blue);
 }
+.social-button:active path {
+  fill: var(--opacity-white);
+}
 .footer-copyright {
   position: relative;
   font-family: var(--brand-font);
