@@ -551,6 +551,15 @@
 .hotels-filter-pointer {
   background: none;
 }
+.hotels-filter-pointer-active path {
+  fill: var(--basic-blue);
+}
+.hotels-filter-pointer:hover path {
+  fill: var(--basic-black);
+}
+.hotels-filter-pointer:active path {
+  fill: var(--basic-blue);
+}
 .down-arrow {
   margin-right: 67px;
 }
