@@ -457,6 +457,7 @@
   border-radius: 50%;
   box-shadow: 0 2px 0 0 var(--range-shadow);
   cursor: pointer;
+  outline: none;
 }
 .range-controls .toggle:hover {
   transform: scale(1.25);
