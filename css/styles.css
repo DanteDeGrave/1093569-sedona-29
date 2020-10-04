@@ -19,7 +19,8 @@
 
 :root{
   /*colors*/
-  --shadow-color: rgba(0, 1, 1, 0.2);;
+  --shadow-color: rgba(0, 1, 1, 0.2);
+  --modal-shadow: rgba(0, 1, 1, 0.15);
   --brand-color-background: #fff;
   --brand-color-font: #000;
   --basic-white: #fff;
@@ -36,6 +37,7 @@
   --basic-mid-gray: #6a6a6a;
   --basic-light-gray: #cacaca;
   --basic-extra-gray: #f2f2f2;
+  --hover-gray: #ebebeb;
   --basic-brown: #766357;
   --hover-brown: #604e43;
   --active-brown: #503E33;
@@ -290,6 +292,145 @@
 .maps-container {
   position: relative;
   margin-bottom: 473px;
+}
+.modal {
+  position: absolute;
+  visibility: visible;
+  width: 568px;
+  height: 395px;
+  background-color: var(--brand-color-background);
+  left: 316px;
+  z-index: 1;
+  box-shadow: 0 4px 15px 0 var(--modal-shadow);
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.modal-form div {
+  position: relative;
+}
+.modal-buttons {
+  position: absolute;
+  border: none;
+  outline: none;
+}
+.modal-form fieldset {
+  padding: 0;
+  border: none;
+  text-align: left;
+}
+.modal-input {
+  font-size: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+  border: none;
+  outline: none;
+  background-color: var(--basic-extra-gray);
+}
+.modal-form-calendar {
+  margin-top: 53px;
+  margin-left: 43px;
+}
+.container-modal-calendar-in {
+  margin-left: 12px;
+}
+.modal-calendar-in-text {
+  margin-left: 21px;
+}
+.container-modal-calendar-out {
+  margin-top: 27px;
+  margin-left: 12px;
+}
+.modal-calendar-out-text {
+  margin-left: 17px;
+}
+.modal-form-calendar input {
+  width: 332px;
+  height: 38px;
+}
+.modal-form-calendar input:hover {
+  background-color: var(--hover-gray);
+}
+.modal-form-calendar input:focus {
+  background-color: var(--basic-white);
+}
+.modal-form-calendar input[type="text"] {
+  padding-left: 12px;
+}
+.modal-calendar-button {
+  right: 3px;
+  top: 8px;
+}
+.modal-calendar-button:hover path {
+  fill: var(--basic-black);
+}
+.modal-calendar-button:active path {
+  fill: var(--basic-blue);
+}
+.modal-form-roomer {
+  margin-top: 29px;
+  margin-left: 56px;
+}
+.modal-form-roomer div {
+  display: inline-block;
+}
+.modal-form-roomer input {
+  width: 110px;
+  height: 36px;
+  text-align: center;
+}
+.modal-adults-text {
+  margin-left: 36px;
+}
+.container-modal-children {
+  margin-left: 49px;
+}
+.modal-children-text {
+  margin-left: 24px;
+}
+.modal-button-plus {
+  right: 7px;
+  top: 12px;
+}
+.modal-button-plus:hover path {
+  fill: var(--basic-black);
+}
+.modal-button-plus:active path {
+  fill: var(--basic-blue);
+}
+.modal-button-minus {
+  right: 83px;
+  top: 8px;
+}
+.modal-button-minus:hover rect {
+  fill: var(--basic-black);
+}
+.modal-button-minus:active rect {
+  fill: var(--basic-blue);
+}
+.modal-search-button {
+  width: 458px;
+  height: 58px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  background-color: var(--basic-blue);
+  margin-top: 54px;
+  margin-left: 55px;
+}
+.modal-search-button:hover {
+  background-color: var(--hover-blue);
+}
+.modal-search-button:active {
+  background-color: var(--active-blue);
+  color: var(--opacity-white);
 }
 .map {
   position: absolute;
