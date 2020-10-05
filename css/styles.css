@@ -388,6 +388,7 @@
 }
 .modal-form-roomer div {
   display: inline-block;
+  vertical-align: center;
 }
 .modal-form-roomer input {
   width: 110px;
