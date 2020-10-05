@@ -320,6 +320,8 @@
   position: absolute;
   border: none;
   outline: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 .modal-form fieldset {
   padding: 0;
@@ -333,6 +335,7 @@
   border: none;
   outline: none;
   background-color: var(--basic-extra-gray);
+
 }
 .modal-form-calendar {
   margin-top: 53px;
@@ -360,6 +363,8 @@
 }
 .modal-form-calendar input:focus {
   background-color: var(--basic-white);
+  outline: 2px solid var(--border-color);
+  outline-offset: -2px;
 }
 .modal-form-calendar input[type="text"] {
   padding-left: 12px;
