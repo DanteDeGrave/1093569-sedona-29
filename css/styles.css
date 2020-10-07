@@ -21,18 +21,18 @@
   /*colors*/
   --shadow-color: rgba(0, 1, 1, 0.2);
   --modal-shadow: rgba(0, 1, 1, 0.15);
-  --brand-color-background: #fff;
-  --brand-color-font: #000;
-  --basic-white: #fff;
+  --brand-color-background: #ffffff;
+  --brand-color-font: #000000;
+  --basic-white: #ffffff;
   --opacity-white: rgba(255,255,255,0.3);
   --opacity-white-90: rgba(255,255,255,0.9);
   --basic-blue: #81b3d2;
   --hover-blue: #669EC0;
   --active-blue: #5496BD;
-  --basic-black: #000;
+  --basic-black: #000000;
   --opacity-black: rgba(0,0,0,0.3);
-  --basic-gray: #eee;
-  --basic-dark-gray: #333;
+  --basic-gray: #eeeeee;
+  --basic-dark-gray: #333333;
   --basic-extramid-gray: #a9a9a9;
   --basic-mid-gray: #6a6a6a;
   --basic-light-gray: #cacaca;
@@ -305,6 +305,9 @@
   z-index: 1;
   box-shadow: 0 4px 15px 0 var(--modal-shadow);
 }
+.modal-closed {
+  display: none;
+}
 .modal-form {
   display: flex;
   flex-wrap: wrap;
@@ -357,20 +360,21 @@
 .modal-calendar-out-text {
   margin-left: 17px;
 }
-.modal-form-calendar input {
+.modal-calendar-in-text,
+.modal-calendar-out-text {
   width: 332px;
   height: 38px;
+  padding-left: 12px;
 }
-.modal-form-calendar input:hover {
+.modal-calendar-in-text:hover,
+.modal-calendar-out-text:hover {
   background-color: var(--hover-gray);
 }
-.modal-form-calendar input:focus {
+.modal-calendar-in-text:focus,
+.modal-calendar-out-text:focus {
   background-color: var(--basic-white);
   outline: 2px solid var(--border-color);
   outline-offset: -2px;
-}
-.modal-form-calendar input[type="text"] {
-  padding-left: 12px;
 }
 .modal-calendar-button {
   right: 3px;
@@ -390,7 +394,8 @@
   display: inline-block;
   vertical-align: center;
 }
-.modal-form-roomer input {
+.modal-adults-text,
+.modal-children-text {
   width: 110px;
   height: 36px;
   text-align: center;
@@ -448,6 +453,9 @@
   left: 1px;
   background-image: url("../img/map.png");
   background-repeat: no-repeat;
+}
+.search-hotels {
+  position: relative;
 }
 .search-hotels span {
   display: block;

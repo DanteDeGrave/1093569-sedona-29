@@ -21,8 +21,8 @@
     </header>
     <main class="container">
       <section class="hotels-filter">
-        <h1 class="visually-hidden">Гостиницы</h1> <!--Скрытый-->
-        <h2 class="visually-hidden">Фильтр по гостиницам</h2> <!--Скрытый-->
+        <h1 class="visually-hidden">Гостиницы</h1>
+        <h2 class="visually-hidden">Фильтр по гостиницам</h2>
         <form class="hotels-filter-menu" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Инфраструктура:</legend>
@@ -63,10 +63,10 @@
             <div class="range-filter">
               <div class="price-controls">
                 <label class="price-controls-label min-price">
-                  от <input class="price-controls-input" type="text" name="min-price" value="0">
+                  от <input class="price-controls-input" type="text" name="min-price" value="0"  pattern="[0-9]{1,7}" maxlength="7">
                 </label>
                 <label class="price-controls-label max-price">
-                  до <input class="price-controls-input" type="text" name="max-price" value="3000">
+                  до <input class="price-controls-input" type="text" name="max-price" value="3000"  pattern="[0-9]{1,7}" maxlength="7">
                 </label>
               </div>
               <div class="range-controls">
@@ -101,7 +101,7 @@
         </div>
       </section>
       <section class="search-result">
-        <h2 class="visually-hidden">Найденные гостиницы</h2> <!--Скрытый-->
+        <h2 class="visually-hidden">Найденные гостиницы</h2>
         <ul class="search-result-list">
           <li class="search-result-item">
             <a class="search-result-item-photo" href=""><img src="img/amara_resort.jpg" width="135" height="90" alt="Amara Resort & SPA"></a>
@@ -180,12 +180,12 @@
     </main>
     <footer class="main-footer">
       <section class="contacts">
-        <h2 class="visually-hidden">Контакты</h2>      <!--Скрытый-->
+        <h2 class="visually-hidden">Контакты</h2>
         <span>#visitsedona</span>
         <a class="phone" href="tel:+74956660166">Тел: +7(495) 666-01-66</a>
       </section>
       <section class="social">
-        <h2 class="visually-hidden">Мы есть в социальных сетях сетях</h2>    <!--Скрытый-->
+        <h2 class="visually-hidden">Мы есть в социальных сетях сетях</h2>
         <ul>
           <li>
             <a class="social-button" href="https://twitter.com/">
