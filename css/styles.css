@@ -27,8 +27,8 @@
   --opacity-white: rgba(255,255,255,0.3);
   --opacity-white-90: rgba(255,255,255,0.9);
   --basic-blue: #81b3d2;
-  --hover-blue: #669EC0;
-  --active-blue: #5496BD;
+  --hover-blue: #669ec0;
+  --active-blue: #5496bd;
   --basic-black: #000000;
   --opacity-black: rgba(0,0,0,0.3);
   --basic-gray: #eeeeee;
@@ -40,7 +40,7 @@
   --hover-gray: #ebebeb;
   --basic-brown: #766357;
   --hover-brown: #604e43;
-  --active-brown: #503E33;
+  --active-brown: #503e33;
   --border-color: #e5e5e5;
   --active-light-gray: #bdbbbc;
   --range-shadow: #ababab;
@@ -504,6 +504,7 @@
 .hotels-filter-menu {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
   height: 217px;
   background-image: url(../img/filter-menu-background.jpg);
@@ -524,6 +525,9 @@
   margin-right: 69px;
 }
 .hotels-filter-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   font-size: 14px;
   line-height: 21px;
   color: var(--brand-color-background);
