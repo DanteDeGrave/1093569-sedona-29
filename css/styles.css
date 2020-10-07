@@ -880,11 +880,12 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  min-width: 225px;
   margin-left: 125px;
 }
 .contacts span {
   display: block;
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 .phone {
   display: block;
