@@ -183,6 +183,7 @@
   counter-reset: features-count;
   padding: 0;
   margin: 0 0 56px;
+  word-wrap: break-word;
 }
 .features-item:first-child {
   background-image: url("../img/true_city.jpg");
@@ -220,6 +221,7 @@
 }
 .features-list dd {
   margin: 0 auto;
+  padding-bottom: 25px;
 }
 .features-item {
   min-height: 256px;
@@ -512,19 +514,23 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  height: 217px;
+  min-height: 217px;
   background-image: url(../img/filter-menu-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -147px;
 }
 .hotels-filter-menu fieldset {
   padding: 0;
-  margin: 26px 0;
+  margin-top: 26px;
+  margin-bottom: 12px;
   border: none;
 }
 .hotels-filter-menu fieldset:nth-child(1) {
   margin-left: 72px;
 }
 .hotels-filter-menu fieldset:nth-child(2) {
-  margin-left: 119px;
+  margin-left: 117px;
 }
 .hotels-filter-menu fieldset:nth-child(3) {
   margin-left: auto;
@@ -691,32 +697,48 @@
 }
 .hotels-filter-sort {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   width: 100%;
   min-height: 86px;
+}
+.hotels-filter-sort-text {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+}
+.hotels-filter-found {
+  margin-top: 29px;
+  margin-left: 73px;
+}
+.hotels-filter-label {
+  margin-top: 31px;
+  margin-left: 47px;
+}
+.hotels-filter-sort-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 760px;
+  align-items: flex-start;
+}
+.hotels-filter-button {
+  margin-top: 31px;
+  margin-left: 32px;
+}
+.hotels-filter-sort-arrows {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hotels-filter-sort-arrows .hotels-filter-pointer {
+  padding: 0;
+}
+.hotels-filter-pointer {
+  margin-top: 4px;
+  margin-left: 12px;
 }
 .hotels-filter-found {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-  margin-left: 73px;
-}
-.hotels-filter-label {
-  margin-left: 46px;
-  margin-bottom: 6px;
-}
-.button-price {
-  margin-left: 41px;
-  margin-bottom: 6px;
-}
-.button-type {
-  margin-left: 33px;
-  margin-bottom: 6px;
-}
-.button-rating {
-  margin-left: 34px;
-  margin-right: auto;
-  margin-bottom: 6px;
 }
 .hotels-filter-pointer {
   background: none;
@@ -729,9 +751,6 @@
 }
 .hotels-filter-pointer:active path {
   fill: var(--basic-blue);
-}
-.down-arrow {
-  margin-right: 67px;
 }
 .hotels-filter-button {
   background-color: transparent;
