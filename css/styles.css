@@ -534,7 +534,7 @@
   background-image: url(../img/filter-menu-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0 -147px;
+  background-position: 50% 34%;
 }
 .hotels-filter-menu fieldset {
   padding: 0;
