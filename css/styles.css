@@ -591,9 +591,6 @@
   background-repeat: no-repeat;
   left: -40px;
 }
-.hotels-filter-menu-checkbox:focus + label {
-  color: var(--opacity-white);
-}
 .hotels-filter-menu-checkbox:focus + label::before {
   outline: 2px auto var(--basic-black);
 }
