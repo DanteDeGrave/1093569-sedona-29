@@ -325,7 +325,6 @@
 .modal-buttons {
   position: absolute;
   border: none;
-  outline: none;
   background-color: transparent;
   cursor: pointer;
 }
@@ -339,7 +338,6 @@
   font-weight: inherit;
   text-transform: inherit;
   border: none;
-  outline: none;
   background-color: var(--basic-extra-gray);
 
 }
@@ -410,8 +408,13 @@
   margin-left: 24px;
 }
 .modal-button-plus {
-  right: 7px;
-  top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 100%;
+  right: 2px;
+  top: 1px;
 }
 .modal-button-plus:hover path {
   fill: var(--basic-black);
@@ -420,8 +423,13 @@
   fill: var(--basic-blue);
 }
 .modal-button-minus {
-  right: 83px;
-  top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 100%;
+  right: 78px;
+  top: 1px;
 }
 .modal-button-minus:hover rect {
   fill: var(--basic-black);
@@ -475,7 +483,6 @@
   color: var(--basic-white);
   text-transform: uppercase;
   border: none;
-  outline: none;
   cursor: pointer;
 }
 .search-hotels-button {
@@ -484,7 +491,6 @@
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  /*margin-bottom: 473px;*/
 }
 .search-hotels-button:hover {
   background-color: var(--hover-brown);
@@ -585,6 +591,12 @@
   background-repeat: no-repeat;
   left: -40px;
 }
+.hotels-filter-menu-checkbox:focus + label {
+  color: var(--opacity-white);
+}
+.hotels-filter-menu-checkbox:focus + label::before {
+  outline: 2px auto var(--basic-black);
+}
 .range-filter {
   width: 320px;
 }
@@ -618,7 +630,6 @@
   border-radius: 50%;
   box-shadow: 0 2px 0 0 var(--range-shadow);
   cursor: pointer;
-  outline: none;
 }
 .range-controls .toggle:hover {
   transform: scale(1.25);
@@ -641,7 +652,6 @@
   width: 60px;
   padding: 0;
   border: none;
-  outline: none;
   background: none;
   color: var(--basic-white);
 }
@@ -677,7 +687,6 @@
   color: var(--basic-white);
   margin: 20px 85px;
   cursor: pointer;
-  outline: none;
 }
 .price-range-button:hover {
   background-color: var(--basic-white);
@@ -804,7 +813,7 @@
   text-decoration: none;
   color: var(--basic-black);
   max-width: 500px;
-  padding-top: 27px;
+  margin-top: 27px;
 }
 .search-result-item-name:hover {
   color: var(--basic-blue);
