@@ -110,6 +110,9 @@
 .site-nav a:not(.nav-active-link):hover {
   color: var(--basic-blue);
 }
+.site-nav a:focus {
+  outline: 1px auto var(--basic-blue);
+}
 .site-nav a:not(.nav-active-link):active {
   color: var(--opacity-black);
 }
@@ -341,7 +344,9 @@
   text-transform: inherit;
   border: none;
   background-color: var(--basic-extra-gray);
-
+}
+.modal-input:focus {
+  outline: 1px auto var(--basic-blue);
 }
 .modal-form-calendar {
   margin-top: 53px;
@@ -373,8 +378,7 @@
 .modal-calendar-in-text:focus,
 .modal-calendar-out-text:focus {
   background-color: var(--basic-white);
-  outline: 2px solid var(--border-color);
-  outline-offset: -2px;
+  outline: 1px auto var(--basic-blue);
 }
 .modal-calendar-button {
   right: 3px;
@@ -382,6 +386,9 @@
 }
 .modal-calendar-button:hover path {
   fill: var(--basic-black);
+}
+.modal-calendar-button:focus {
+  outline: 1px auto var(--basic-blue);
 }
 .modal-calendar-button:active path {
   fill: var(--basic-blue);
@@ -421,6 +428,9 @@
 .modal-button-plus:hover path {
   fill: var(--basic-black);
 }
+.modal-button-plus:focus {
+  outline: 1px auto var(--basic-blue);
+}
 .modal-button-plus:active path {
   fill: var(--basic-blue);
 }
@@ -435,6 +445,9 @@
 }
 .modal-button-minus:hover rect {
   fill: var(--basic-black);
+}
+.modal-button-minus:focus {
+  outline: 1px auto var(--basic-blue);
 }
 .modal-button-minus:active rect {
   fill: var(--basic-blue);
@@ -486,6 +499,9 @@
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+}
+.buttons:focus {
+  outline: 1px auto var(--basic-blue);
 }
 .search-hotels-button {
   padding: 30px 139px;
@@ -598,7 +614,7 @@
   left: -40px;
 }
 .hotels-filter-menu-checkbox:focus + label::before {
-  outline: 2px auto var(--basic-black);
+  outline: 1px auto var(--basic-blue);
 }
 .range-filter {
   width: 320px;
@@ -637,6 +653,10 @@
 .range-controls .toggle:hover {
   transform: scale(1.25);
 }
+.range-controls .toggle:focus {
+  transform: scale(1.25);
+  outline: 1px auto var(--basic-blue);
+}
 .range-controls .toggle-max {
   left: 251px;
 }
@@ -657,6 +677,9 @@
   border: none;
   background: none;
   color: var(--basic-white);
+}
+.price-controls-input:focus {
+  outline: 1px auto var(--basic-blue);
 }
 .min-price {
   position: relative;
@@ -695,6 +718,9 @@
   background-color: var(--basic-white);
   color: var(--basic-black);
 }
+.price-range-button:focus {
+  outline: 1px auto var(--basic-blue);
+}
 .hotels-filter-sort {
   display: flex;
   flex-wrap: wrap;
@@ -727,6 +753,7 @@
 .hotels-filter-sort-arrows {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 .hotels-filter-sort-arrows .hotels-filter-pointer {
   padding: 0;
@@ -787,6 +814,9 @@
   align-items: center;
   width: 100%;
   min-height: 150px;
+}
+.search-result-item a:focus {
+  outline: 1px auto var(--basic-blue);
 }
 .search-result-item-photo {
   margin-left: 73px;
@@ -924,6 +954,9 @@
   font-weight: bold;
   padding-bottom: 13px;
 }
+.phone:focus {
+  outline: 1px auto var(--basic-blue);
+}
 .social {
   margin-left: 176px;
 }
@@ -948,6 +981,9 @@
 .social-button:hover {
   background-color: var(--hover-blue);
 }
+.social-button:focus {
+  outline: 1px auto var(--basic-blue);
+}
 .social-button:active {
   background-color: var(--active-blue);
 }
@@ -970,6 +1006,9 @@
 }
 .htmlAcademy-logo:hover path {
   fill: var(--basic-blue);
+}
+.htmlAcademy-logo:focus {
+  outline: 1px auto var(--basic-blue);
 }
 .htmlAcademy-logo:active path {
   fill: var(--active-light-gray);
