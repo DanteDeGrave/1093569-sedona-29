@@ -64,7 +64,7 @@
   min-height: 100%;
   color: var(--brand-color-font);
   background-color: var(--brand-color-background);
-  box-shadow: 0 5px 15px 0 var(--shadow-color);
+  box-shadow: 0 5px 15px 1px var(--shadow-color);
 }
 .site-nav {
   display: flex;
@@ -94,6 +94,9 @@
   top: 0;
   left: 531px;
   z-index: 1;
+}
+.main-head-logo:focus {
+  outline: 1px auto var(--basic-blue);
 }
 .main-nav {
   font-family: var(--brand-font);
